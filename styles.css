@@ -1,0 +1,255 @@
+@font-face {
+    font-family: "Boulder-Regular";
+    src: url("assets/fonts/Boulder-Regular.eot"),
+        /* IE9 Compat Modes */
+        url("assets/fonts/Boulder-Regular.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("assets/fonts/Boulder-Regular.otf") format("opentype"),
+        /* Open Type Font */
+        url("assets/fonts/Boulder-Regular.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("assets/fonts/Boulder-Regular.woff") format("woff"),
+        /* Modern Browsers */
+        url("assets/fonts/Boulder-Regular.woff2") format("woff2");
+    /* Modern Browsers */
+}
+
+@font-face {
+    font-family: "Castle-Tult";
+    src: url("assets/fonts/CastleTUlt.eot"),
+        /* IE9 Compat Modes */
+        url("assets/fonts/CastleTUlt.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */
+        url("assets/fonts/CastleTUlt.otf") format("opentype"),
+        /* Open Type Font */
+        url("assets/fonts/CastleTUlt.ttf") format("truetype"),
+        /* Safari, Android, iOS */
+        url("assets/fonts/CastleTUlt.woff") format("woff"),
+        /* Modern Browsers */
+        url("assets/fonts/CastleTUlt.woff2") format("woff2");
+    /* Modern Browsers */
+}
+
+
+html {
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    margin: 30px;
+}
+
+.font-boulder {
+    font-family: Boulder-Regular;
+}
+
+.font-Castle {
+    font-family: Castle-Tult;
+}
+
+.font-Arial {
+    font-family: Arial;
+}
+
+.fontSize13 {
+    font-size: 13px;
+}
+
+.fontSize18 {
+    font-size: 18px;
+}
+
+.fontSize31 {
+    font-size: 31px;
+}
+
+.textAlignCentre {
+    text-align: center;
+}
+
+.width70 {
+    width: 70%;
+}
+
+.width30 {
+    width: 30%;
+}
+
+.flex70 {
+    flex: 70%;
+}
+
+.flex30 {
+    flex: 30%;
+}
+
+.flex60 {
+    flex: 60%;
+}
+
+.flex40 {
+    flex: 40%;
+}
+
+.padding14 {
+    padding: 14px;
+}
+
+.paddingTop14 {
+    padding-top: 14px;
+}
+
+.marginTop10 {
+    margin-top: 10px;
+}
+
+.marginTop14 {
+    margin-top: 14px;
+}
+
+.marginTop20 {
+    margin-top: 20px;
+}
+
+.marginTop35 {
+    margin-top: 35px;
+}
+.marginRight20{
+    margin-right: 20px;;
+}
+
+.foreClrWhite {
+    color: #fff;
+}
+
+.foreClrBlack {
+    color: #000;
+}
+
+.floatLeft {
+    float: left;
+}
+
+.logoImgCls {
+    width: 40px;
+    vertical-align: middle;
+}
+
+.mainDivCls {
+    display: flex;
+    flex-direction: row;
+}
+
+.mainSectionCls nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.loginSignupHldrCls {
+    margin-top: 20px;
+    margin-right: 250px;
+    float: right;
+}
+
+.joinCls {
+    background: #58585a;
+    border-radius: 10px;
+    width: 150px;
+    height: 20px;
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.signinHolderCls {
+    float: left;
+    font-size: 11px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.signinHolderCls input {
+    width: 125px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.rect {
+    height: 17px;
+    font-size: 10px;
+    position: relative;
+    top: 15px;
+    width: 52px;
+    left: -3px;
+    font-size: 11px;
+    color: black;
+    text-align: center;
+    line-height: 17px;
+    font-family: Arial;
+    background: #ffcb08;
+}
+
+.circle {
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    background: #ffcb08;
+}
+
+.headerBlockCls {
+    background: #fff;
+    color: black;
+    font-size: 30px;
+    width: 85%;
+    text-align: center;
+    height: 37px;
+    line-height: 37px;
+}
+
+.logImgHolderCls {
+    position: absolute;
+    left: 60.5%;
+    top: 44px;
+}
+
+.secondaryNav {
+    width: 100%;
+    display: inline-block;
+}
+
+.secondaryNav a:focus,
+.secondaryNav a:active {
+    color: red;
+    text-decoration: underline;
+}
+
+.mainSectionCls .gameCategoryCls nav a:focus,
+.mainSectionCls .gameCategoryCls nav a:active {
+    color: red;
+    text-decoration: underline;
+}
+
+.gameCategoryCls {
+    width: 85%;
+    height: calc(100vh - 200px);
+    background: white;
+}
+
+
+.mainSectionCls .gameCategoryCls nav a {
+    color: #000;
+}
+
+.gameCategoryCls .menu{
+    display: flex;
+    flex-direction: row;
+    font-weight: 800;
+}
