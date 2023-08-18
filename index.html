@@ -5,7 +5,7 @@
     <title>GameTown</title>
 </head>
 <link href="styles.css" rel="stylesheet" type="text/css" />
-<script src="myscripts.js"></script>
+<script src="index.js"></script>
 
 <body>
 
@@ -81,16 +81,51 @@
                         <a href="#">PLUS</a>
                     </nav>
                 </div>
+                <div class="gameContainerCls">
+                    <div class="gameListCls foreClrBlack font-Arial fontSize18">
+                        <div class="gameHeader">
+                            <img src="assets/images/jack-trans.png"/>
+                            <div class="foreClrRed fontWeight800">HOUSE GAMES</div>
+                        </div>
+                        <ul class="fontWeight800">VIDEO POKER
+                            <li>Jacks or Better</li>
+                            <li>Joker Poker</li>
+                            <li>Deuces Wild Poker</li>
+                            <li>Xtra Poker</li>
+                            <li>Xtra Bonus Poker</li>
+                            <li>Xtra Xtra Bonus Poker</li>
+                        </ul>
+                        <ul class="fontWeight800">VIDEO EZ POKER
+                            <li>EZ Poker</li>
+                            <li>Double Shot Poker</li>
+                            <li>Heads Up Poker</li>
+                            <li>Position Poker</li>
+                        </ul>
+                        <ul class="fontWeight800">1 ON 1 POKER
+                            <li>Mini-Tex</li>
+                            <li>Texas RoundUp</li>
+                            <li>EZ Poker Heads Up</li>
+                        </ul>
+                    </div>
+                    <div class="gameListCls gameListImgCls">
+                        <img src="assets/images/games/minitex.png"/>
+                        <img src="assets/images/games/doubleshot.png"/>
+                        <img src="assets/images/games/texround.png"/>
+                        <img src="assets/images/games/headsup.png"/>
+                        <img src="assets/images/games/xtraplay.png"/>
+                    </div>
+                </div>
             </div>
+
         </section>
         <!-- #endregion -->
         <!-- #region Tournament and Ad Section-->
         <section class="trnmntaddSectionCls marginTop14 flex40">
-            <div class="">
+            <div id="dynamicHolder" class="">
                 <div class="logImgHolderCls">
-                    <img class="logoImgCls" src="assets/images/logo-trans.png" />
+                    <img id="dynamicImg" class="logoImgCls" src="assets/images/logo-trans.png" />
                 </div>
-                <div class="headerBlockCls font-boulder">
+                <div id="dynamicHeader" class="headerBlockCls font-boulder">
                     600 Free Jacks Daily = 60 Minutes of Play
                 </div>
             </div>

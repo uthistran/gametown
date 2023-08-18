@@ -71,6 +71,10 @@ body {
     font-size: 31px;
 }
 
+.fontWeight800 {
+    font-weight: 800;
+}
+
 .textAlignCentre {
     text-align: center;
 }
@@ -122,8 +126,12 @@ body {
 .marginTop35 {
     margin-top: 35px;
 }
-.marginRight20{
-    margin-right: 20px;;
+
+.marginRight20 {
+    margin-right: 20px;
+}
+.marginLeft15 {
+    margin-left : 15px;
 }
 
 .foreClrWhite {
@@ -132,6 +140,9 @@ body {
 
 .foreClrBlack {
     color: #000;
+}
+.foreClrRed {
+    color: #ff0000;
 }
 
 .floatLeft {
@@ -208,7 +219,7 @@ body {
     background: #fff;
     color: black;
     font-size: 30px;
-    width: 85%;
+    width: 90%;
     text-align: center;
     height: 37px;
     line-height: 37px;
@@ -248,8 +259,78 @@ body {
     color: #000;
 }
 
-.gameCategoryCls .menu{
+.gameCategoryCls .menu {
     display: flex;
     flex-direction: row;
     font-weight: 800;
+}
+
+.JackImgCls {
+    width: 50px;
+    margin-top: -9px;
+}
+
+@-webkit-keyframes fadein {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadinAni {
+    animation: fadein 3s normal;
+}
+
+.gameContainerCls{
+    display: flex;
+    margin: 40px 20px;
+}
+.gameContainerCls .gameListCls{
+    flex : 1;
+}
+
+.gameContainerCls .gameListCls .gameHeader{
+    display: flex;
+    align-items: center;
+}
+
+.gameContainerCls .gameListCls .gameHeader img{
+    width: 50px;
+}
+
+.gameContainerCls .gameListCls ul{
+    padding-left: 20px;
+    margin-bottom: 10px;;
+}
+.gameContainerCls .gameListCls ul li {
+    list-style: none;
+    font-weight: normal;
+}
+
+.gameContainerCls .gameListImgCls{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.gameContainerCls .gameListImgCls img {
+    cursor: pointer;
 }
