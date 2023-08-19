@@ -66,6 +66,9 @@ body {
 .fontSize18 {
     font-size: 18px;
 }
+.fontSize20 {
+    font-size: 20px;
+}
 
 .fontSize31 {
     font-size: 31px;
@@ -133,6 +136,9 @@ body {
 .marginLeft15 {
     margin-left : 15px;
 }
+.marginLeft50 {
+    margin-left : 50px;
+}
 
 .foreClrWhite {
     color: #fff;
@@ -167,8 +173,9 @@ body {
 
 .loginSignupHldrCls {
     margin-top: 20px;
-    margin-right: 250px;
-    float: right;
+    display: flex;
+    justify-content: end;
+    width: 90%;
 }
 
 .joinCls {
@@ -227,8 +234,8 @@ body {
 
 .logImgHolderCls {
     position: absolute;
-    left: 60.5%;
-    top: 44px;
+    left: 61.7%;
+    top: 43px;
 }
 
 .secondaryNav {
@@ -249,7 +256,7 @@ body {
 }
 
 .gameCategoryCls {
-    width: 85%;
+    width: 90%;
     height: calc(100vh - 200px);
     background: white;
 }
@@ -329,8 +336,36 @@ body {
 .gameContainerCls .gameListImgCls{
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
 }
 
 .gameContainerCls .gameListImgCls img {
     cursor: pointer;
+}
+
+.tournamentLstngHdr{
+    margin-top: 60px;
+    font-size: 30px;
+    width: 55%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.trnmtLstnHolder {
+    width: 90%;
+    display: flex;
+    background: white;
+    height: calc(100vh - 200px);
+    margin-top: 30px;
+    color: #000;
+}
+
+.trnmtLstnHolder .detailsHolder{
+    flex: 2;
+}
+.trnmtLstnHolder .adsHolder{
+    flex: 1;
+    border-left: 2px solid;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
