@@ -2,6 +2,7 @@
 
 function intialize() {
     changeDynamicValues();
+    AddBannerAds();
 }
 var dynamicText = ["600 Free Jacks Daily = 60 Minutes of Play", "Join the One Eye Jack Club - Unlimited Play"];
 var dynamicImg = ["assets/images/logo-trans.png", "assets/images/jack-trans.png"];
@@ -35,6 +36,15 @@ function changeDynamicValues() {
             }
         }, 1500);
     }, 30000)
+}
+
+function AddBannerAds() {
+    var adHolder = document.getElementById('adsHolder');
+    for (var i = 0; i < 3; i++) {
+        var img = document.createElement("img");
+        img.src = "assets/images/bannerads.jpg";
+        adHolder.appendChild(img);
+    }
 }
 
 
