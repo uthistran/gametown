@@ -3,6 +3,7 @@
 
 <head>
     <title>GameTown</title>
+    <link rel="icon" type="image/png" href="assets/images/logo-trans.png" />
 </head>
 <link href="styles.css" rel="stylesheet" type="text/css" />
 <script src="index.js"></script>
@@ -66,8 +67,8 @@
                 <a href="#">Help</a>
             </nav>
 
-            <div class="gameCategoryCls marginTop20">
-                <div class="menu font-Arial fontSize13 padding14 foreClrBlack">
+            <div id="gameCategory" class="gameCategoryCls marginTop20">
+                <div id="gameCategoryMenu" class="menu font-Arial fontSize13 padding14 foreClrBlack">
                     <div class="marginRight20">
                         GAME CATEGORIES:
                     </div>
@@ -81,10 +82,10 @@
                         <a href="#">PLUS</a>
                     </nav>
                 </div>
-                <div class="gameContainerCls">
+                <div id="gameListContainer" class="gameContainerCls">
                     <div class="gameListCls foreClrBlack font-Arial fontSize20">
                         <div class="gameHeader">
-                            <img src="assets/images/jack-trans.png"/>
+                            <img src="assets/images/jack-trans.png" />
                             <div class="foreClrRed fontWeight800">HOUSE GAMES</div>
                         </div>
                         <ul class="fontWeight800">VIDEO POKER
@@ -108,11 +109,23 @@
                         </ul>
                     </div>
                     <div class="gameListCls gameListImgCls">
-                        <img src="assets/images/games/minitex.png"/>
-                        <img src="assets/images/games/doubleshot.png"/>
-                        <img src="assets/images/games/texround.png"/>
-                        <img src="assets/images/games/headsup.png"/>
-                        <img src="assets/images/games/xtraplay.png"/>
+                        <img onclick="onGameClick()" src="assets/images/games/minitex.png" />
+                        <img onclick="onGameClick()" src="assets/images/games/doubleshot.png" />
+                        <img onclick="onGameClick()" src="assets/images/games/texround.png" />
+                        <img onclick="onGameClick()" src="assets/images/games/headsup.png" />
+                        <img onclick="onGameClick()" src="assets/images/games/xtraplay.png" />
+                    </div>
+                </div>
+                <div id="gameContainer" class="">
+                    <div class="headersCls foreClrBlack fontSize31 font-Arial">
+                        <div class="title">House Blackjack Tournament (NV)</div>
+                        <div  class='minmaxBtn' onclick="onGameResizeClick()" id="maxIcon">&#128471;&#xFE0E;</div>
+                        <div  class='minmaxBtn' onclick="onGameCloseClick()" id="closeIcon">&#128473;&#xFE0E;</div>
+                    </div>
+                    <div id="gameImgHolder" class="">
+                        <!-- #region Game-->
+                        <img id="gameImg" class="gameImg" src="assets/images/game.jpg"/>
+                        <!-- #endregion -->
                     </div>
                 </div>
             </div>
@@ -120,7 +133,7 @@
         </section>
         <!-- #endregion -->
         <!-- #region Tournament and Ad Section-->
-        <section class="trnmntaddSectionCls marginTop14 flex40">
+        <section class="trnmntaddSectionCls marginTop20 flex40">
             <div id="dynamicHolder" class="">
                 <div class="logImgHolderCls">
                     <img id="dynamicImg" class="logoImgCls" src="assets/images/logo-trans.png" />
@@ -129,11 +142,11 @@
                     600 Free Jacks Daily = 60 Minutes of Play
                 </div>
             </div>
-            <div class="tournamentLstngHdr">TOURNAMENT LISTING</div>
-            <div class="trnmtLstnHolder">
-                <div class="detailsHolder">
+            <div id="trmntLstHdr" class="tournamentLstngHdr">TOURNAMENT LISTING</div>
+            <div id='trnmtLstnHolder' class="trnmtLstnHolder">
+                <div id="trnmtdtsHdr" class="detailsHolder">
                     <div class="statesDrp">
-                        <select>
+                        <select class="stateDrpDown fontSize20">
                             <option value="AL">Alabama</option>
                             <option value="AK">Alaska</option>
                             <option value="AZ">Arizona</option>
@@ -162,7 +175,7 @@
                             <option value="MO">Missouri</option>
                             <option value="MT">Montana</option>
                             <option value="NE">Nebraska</option>
-                            <option value="NV">Nevada</option>
+                            <option value="NV" selected="selected">Nevada</option>
                             <option value="NH">New Hampshire</option>
                             <option value="NJ">New Jersey</option>
                             <option value="NM">New Mexico</option>
@@ -187,6 +200,27 @@
                             <option value="WY">Wyoming</option>
                         </select>
                     </div>
+                    <div class="eventTitleHolder fontSize20 font-Arial">
+                        <a id="houseEvent" onclick="onEventTitleClick('house')" href="#">HOUSE EVENTS</a> 
+                        <a id ="clubEvent" onclick="onEventTitleClick('club')" href="#">CLUB EVENTS</a>
+                    </div>
+                    <div class="dateHolder margin20 font-Arial fontSize20">
+                        <div id="trmntDate"></div>
+                    </div>
+                    <table class="trnamentTble textAlignCentre font-Arial fontSize20">
+                        <tr>
+                          <th>BlackJack Daily/Weekly</th>
+                          <th>Details</th>
+                        </tr>
+                        <tr>
+                          <td>Tournament1</td>
+                          <td>16</td>
+                        </tr>
+                        <tr>
+                          <td>Tournament2</td>
+                          <td>14</td>
+                        </tr>
+                      </table>
                 </div>
                 <div id="adsHolder" class="adsHolder">
 
