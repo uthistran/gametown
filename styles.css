@@ -457,3 +457,24 @@ body {
     border-spacing: 10px;
     margin : auto;
 }
+
+@media screen and (max-width: 1700px) {
+    .fontSize31{
+        font-size: 25px;
+    }
+    .fontSize20{
+        font-size: 15px;
+    }
+    .headerBlockCls{
+        font-size: 23px;
+    }
+    .tournamentLstngHdr{
+        font-size: 22px;
+    }
+    .marginLeft50{
+        margin-left: 30px;
+    }
+    .logImgHolderCls {
+        left : 61.5%;
+    }
+  }
